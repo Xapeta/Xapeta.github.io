@@ -1,0 +1,80 @@
+.menu-bg {
+  background: #fff;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px;
+}
+
+.menu-titulo {
+  font-family: "Fira Sans", sans-serif;
+  color: #111;
+  font-size: 2rem;
+}
+
+.menu-titulo span {
+  background: linear-gradient(90deg, #8A2BE2, #00AEEF);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.menu-nav ul{
+  display: flex;
+  gap: 20px;
+}
+
+.menu-nav a {
+  display: block;
+  font-family: "Fira Sans", sans-serif;
+  color: #111;
+  padding: 10px 20px;
+  font-size: 1.125rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.menu-nav a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #8A2BE2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-nav a:hover::after {
+  width: 100%;
+}
+
+.menu .bx {
+  color: #111;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu .bx:hover {
+  color: var(--main-color);
+}
+
+.main a {
+  display: inline-block;
+  font-family: "Fira Sans", sans-serif;
+  color: #111;
+  padding: 10px 20px;
+  font-size: 1.125rem;
+  flex-wrap: wrap;
+}
+
+.main a:hover {
+  color: var(--main-color);
+}

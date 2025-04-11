@@ -1,0 +1,47 @@
+.habilidades {
+  max-width: 1200px;
+}
+
+.habilidades-titulo {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.habilidades-titulo::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 10px;
+  background: linear-gradient(90deg, #8A2BE2, #00AEEF);
+}
+
+.habilidades-texto {
+  font-family: "Fira Sans", sans-serif;
+  color: var(--text-color);
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.habilidades-grid li {
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.habilidades-grid li::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  background: linear-gradient(90deg, #8A2BE2, #00AEEF);
+  margin-right: 10px;
+  border: 2px solid #141414;
+  border-radius: 50%;
+}
+
+.container-img {
+  margin-left: 40px;
+}
