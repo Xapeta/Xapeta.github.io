@@ -106,14 +106,38 @@
     <div class="login">
       <img src="img/mulher-preto-e-branco.jpg" alt="">
       <div class="formulario">
-        <h2>Solicite um Orçamento</h2>
-          <form>
-            <label for="name">Nome</label>
-            <input type="text" for="name" id="name" placeholder="">
-            <label for="senhar">Senha</label>
-            <input type="text" for="senhar" id="senhar" placeholder="">
+        <h2>Solicite um <span>Orçamento</span></h2>
+        <a href="#" class="fechar">X</a>
+        <form class="dados">
+          <div class="campo min-width">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="">
+              </div>
+
+              <div class="campo min-width">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome">
+              </div>
+
+              <div class="campo full-width">
+                <label for="cpf">CPF</label>
+                <input type="tel" id="cpf">
+              </div>
+
+              <div class="campo full-width">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="">
+              </div>
+
+              <div class="campo full-width">
+                <span></span>
+                <label for="email">Nome da empresa</label>
+                <input type="text" id="email" placeholder="">
+              </div>
+
+              <textarea class="textarea" name="project" placeholder="Descreva seu Projeto..." required></textarea>
+            </form>
             <button type="submit">Solicitar orçamento</button>
-          </form>
       </div>
     </div>
   </section>

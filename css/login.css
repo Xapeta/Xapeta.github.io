@@ -19,19 +19,28 @@
   grid-template-columns: 1fr 1fr;
   background: #fff;
   border-radius: 4px;
+  position: relative;
 }
 
 .formulario {
-  padding: 120px;
+  padding: 70px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .formulario h2 {
-  grid-column: 2;
+  grid-column: 1 / -1;
   text-align: center;
   display: inline-block;
-  color: #111;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.formulario h2 span {
+  background: linear-gradient(90deg, #8A2BE2, #00AEEF);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .formulario label {
@@ -41,40 +50,96 @@
   color: var(#111);
   margin-bottom: 10px;
 }
-
-
+  
 .formulario input {
-  padding: .7rem .5rem;
-  width: 450px;
+  padding: 1rem .5rem;
   box-sizing: border-box;
   border: 1px solid #b3b3b3;
   color: #898d8c;
   border-radius: 4px;
+  font-size: 1rem;
+  color: #111;
 }
 
-.formulario input#name {
+.formulario input:focus {
+  outline: 1px solid #8A2BE2;
+  box-shadow: 0px 0px 0px 2px #bd88ee;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome {
+  grid-column: 1;
+}
+
+.min-width input {
   width: 200px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+  width: 410px;
 }
 
 .formulario button[type="submit"] {
   background: linear-gradient(90deg, #8A2BE2, #00AEEF);
   font-size: 1rem;
-  padding: 1.2rem 1.5rem;
+  padding: 1rem 1.5rem;
   border: none;
   font-family: "Fira Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   text-transform: uppercase;
   color: #2F2536;
   display: block;
   border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .login img {
-  height: 750px;
+  height: 850px;
   width: 600px;
   grid-column: 1;
   object-fit: cover;
   display: block;
   object-position: center;
+}
+
+.dados {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.textarea {
+  margin-top: 30px;
+  height: 100px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+  grid-column: 1 / -1;
+  padding: 10px;
+  border: 1px solid #b3b3b3;
+  box-sizing: border-box;
+  color: #111;
+}
+
+.textarea:focus {
+  outline: 1px solid #8A2BE2;
+  box-shadow: 0px 0px 0px 2px #bd88ee;
+}
+
+.fechar {
+  position: absolute;
+  color: #111;
+  font-size: 1.6rem;
+  font-family: 'IBM Plex Mono';
+  font-weight: bold;
+  right: 0;
+  padding: 10px;
+  margin-right: 10px;
+  top: 30px;
 }
