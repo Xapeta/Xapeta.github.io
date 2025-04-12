@@ -1,5 +1,5 @@
-import initModal from "./modal.js";
 import initDropdownMenu from "./dropdown-menu.js";
+import initModal from "./modal.js";
 
-initModal();
 initDropdownMenu();
+initModal();
