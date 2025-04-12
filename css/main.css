@@ -37,10 +37,6 @@
   justify-self: center;
 }
 
-.introducao-img::before {
-  content: url(/img/grid.svg);
-}
-
 .introducao-img img {
   width: 500px;
   height: 500px;
